@@ -17,6 +17,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - uses: nttld/setup-ndk@v1
+      with:
+        ndk-version: r21e
+        
     - name: Set up Go 1.x
       uses: actions/setup-go@v2
       with:
